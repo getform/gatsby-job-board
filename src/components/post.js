@@ -15,7 +15,7 @@ export default function JobPost({ title, url, location, company }) {
             textDecoration: 'none'
         }}>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <p style={{ marginBottom: '5px', textDecoration: 'none', color: '#1d1d1b', fontWeight: '500' }}>{title}, <span style={{ color: '#1d1d1b', fontWeight: '400' }}>{company}</span></p>
+                <p style={{ marginBottom: '0', textDecoration: 'none', color: '#1d1d1b', fontWeight: '500' }}>{title}, <span style={{ color: '#1d1d1b', fontWeight: '400' }}>{company}</span></p>
                 <p style={{ fontFamily: 'IBM Plex Serif', margin: '0', color: '#77776b', fontSize: '14px', fontStyle: 'italic' }}>{location}</p>
             </div>
             <div
