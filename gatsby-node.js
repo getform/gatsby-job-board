@@ -20,8 +20,13 @@ exports.createPages = async ({ actions: { createPage } }) => {
     // Create a page for each submission.
     data.data.submissions.forEach(page => {
       createPage({
-        path: `/post/${page.url}/`,
+        path: `/job/${page.url}/`,
         component: require.resolve("./src/templates/page-template.js"),
+        context: { page },
+      })
+      createPage({
+        path: `/job/${page.url}/apply`,
+        component: require.resolve("./src/templates/apply-template.js"),
         context: { page },
       })
     })
