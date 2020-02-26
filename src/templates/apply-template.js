@@ -56,7 +56,6 @@ export default function Apply({ pageContext: { page } }) {
                         color: '#1d1d1b',
                         fontSize: '24px',
                         fontWeight: '600',
-                        marginBottom: '5px',
                         marginTop: '35px',
                         marginBottom: '24px'
                     }}
@@ -66,25 +65,63 @@ export default function Apply({ pageContext: { page } }) {
                 </div>
                     : <form>
                         <div>
-                            <input type="text" onChange={(e) => { setTitle(e.target.value) }} placeholder="Name Surname" />
+                            <input style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} type="text" onChange={(e) => { setTitle(e.target.value) }} placeholder="Name Surname" />
                         </div>
                         <div>
-                            <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" />
+                            <input style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" />
                         </div>
                         <div>
-                            <textarea onChange={(e) => { setAddress(e.target.value) }} placeholder="Address" />
+                            <textarea style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} onChange={(e) => { setAddress(e.target.value) }} placeholder="Address" />
                         </div>
                         <div>
-                            <input type="tel" onChange={(e) => { setPhone(e.target.value) }} placeholder="Phone Number" />
+                            <input style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} type="tel" onChange={(e) => { setPhone(e.target.value) }} placeholder="Phone Number" />
                         </div>
                         <div>
-                            <input type="date" onChange={(e) => { setBirthDate(e.target.value) }} placeholder="Birth Date" />
+                            <input style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} type="date" onChange={(e) => { setBirthDate(e.target.value) }} placeholder="Birth Date" />
                         </div>
                         <div>
-                            <input type="file" ref={fileInput} placeholder="Your Resume" />
+                            <input style={{
+                            width: '320px',
+                            marginBottom: '24px',
+                        }} type="file" ref={fileInput} placeholder="Your Resume" />
                         </div>
                         <div>
-                        {isPosting ? <p>Applying...</p> : <button type="button" onClick={applyJob}>Apply</button>}
+                        {isPosting ? <p>Applying...</p> : <button style={{
+                        background: '#093d98',
+                        padding: '10px 45px',
+                        color: 'white',
+                        textDecoration: 'none',
+                    }} type="button" onClick={applyJob}>Apply</button>}
                         </div>
                         
                     </form>}

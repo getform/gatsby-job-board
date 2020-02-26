@@ -57,19 +57,49 @@ export default function PostJob() {
                 {isPosted ? <p>Your job application is posted! It will be around here really soon.</p> : 
                 <form>
                     <div>
-                        <input type="text" onChange={(e) => { setTitle(e.target.value) }} placeholder="Title" />
+                        <input style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} type="text" onChange={(e) => { setTitle(e.target.value) }} placeholder="Title" />
                     </div>
                     <div>
-                        <input type="text" onChange={(e) => { setCompany(e.target.value) }} placeholder="Company" />
+                        <input style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} type="text" onChange={(e) => { setCompany(e.target.value) }} placeholder="Company" />
                     </div>
                     <div>
-                        <input type="text" onChange={(e) => { setLocation(e.target.value) }} placeholder="Location" />
+                        <input style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} type="text" onChange={(e) => { setLocation(e.target.value) }} placeholder="Location" />
                     </div>
                     <div>
-                        <textarea onChange={(e) => { setDescription(e.target.value) }} placeholder="Short Description" />
+                        <textarea style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} onChange={(e) => { setDescription(e.target.value) }} placeholder="Short Description" />
                     </div>
                     <div>
-                        <textarea onChange={(e) => { setContent(e.target.value) }} placeholder="Details" />
+                        <textarea style={{
+                            width: '320px',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            marginBottom: '24px',
+                            padding: '10px'
+                        }} onChange={(e) => { setContent(e.target.value) }} placeholder="Details" />
                     </div>
                     {isPosting ? <p>Posting...</p> : 
                     <button style={{
