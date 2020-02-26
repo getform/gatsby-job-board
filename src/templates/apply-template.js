@@ -25,9 +25,9 @@ export default function Apply({ pageContext: { page } }) {
         formData.append('cv', fileInput.current.files[0])
 
         setPosting(true);
-        axios.post('https://getform.io/f/d6e6fa0a-45fd-4b2d-9474-f99c72144e43', formData, {
+        axios.post('https://getform.io/f/d0029236-e505-499e-bacf-e81f42ce37e8', formData, {
             headers: {
-            'Content-Type': 'multipart/form-data'
+                'Content-Type': 'multipart/form-data'
           }}).then(response => {
             setPosting(false);
             setPosted(true);
