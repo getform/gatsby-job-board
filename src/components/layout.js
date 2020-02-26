@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 
-import "../font/css/ibm-plex.css"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -27,6 +26,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+<style>
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600|IBM+Plex+Serif:400i&display=swap');
+</style>
+
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{

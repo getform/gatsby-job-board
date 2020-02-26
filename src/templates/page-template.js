@@ -49,11 +49,11 @@ export default ({ pageContext: { page } }) => {
             fontFamily: 'IBM Plex Serif'
           }}
         >{page.location} {page.company}</p>
-        <p style={{fontFamily: 'IBM Plex Sans Devanagari'}}>
+        <p style={{fontFamily: 'IBM Plex Sans'}}>
           {page.description}
         </p>
-        <p style={{fontFamily: 'IBM Plex Sans Devanagari'}}>The Details:</p>
-        <p style={{fontFamily: 'IBM Plex Sans Devanagari'}}>{page.content}</p>
+        <p style={{fontFamily: 'IBM Plex Sans'}}>The Details:</p>
+        <p style={{fontFamily: 'IBM Plex Sans'}}>{page.content}</p>
       </div>
     </div>    
     </Layout>
