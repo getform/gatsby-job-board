@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby";
+import JobPost from "../components/post";
+import Layout from '../components/layout';
 
 export default ({ pageContext: { pages } }) => (
-    <div style={{ width: 960, margin: "4rem auto" }}>
-        <h1>Hello and welcome!</h1>
-        <ul>{pages.map(page => <li key={page.id}><Link to={`/post/${page.url}`}>{page.title}</Link></li>)}</ul>
-    </div>
+    <Layout>
+        {pages.map(page => <JobPost url={`/job/${page.url}`} title={page.title} company={page.company} location={page.location} key={page.id} />)}
+    </Layout>
 )
