@@ -6,7 +6,7 @@
   "author": "Durul Doktoroglu <durul@getform.io",
   "dependencies": {
     "@ibm/plex": "^4.0.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.0",
     "dotenv": "^8.2.0",
     "gatsby": "^2.17.11",
