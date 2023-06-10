@@ -9,7 +9,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.4.0",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.17.11",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-offline": "^3.0.19",
